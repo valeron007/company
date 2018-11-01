@@ -1,0 +1,97 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    background-color: #23272b;
+}
+
+#console-input{
+    color: chartreuse;
+}
+
+/*footer .span12*/
+/*{*/
+    /*text-align: center;*/
+/*}*/
+
+/*#social li a{*/
+    /*background-image: url("../img/social-media-icons.png");*/
+    /*background-repeat: no-repeat;*/
+    /*display: block;*/
+    /*height: 32px;*/
+    /*width: 32px;*/
+/*}*/
+
+/*#social li a.facebook-icon*/
+/*{*/
+    /*background-position: 0px 0px;*/
+/*}*/
+
+/*#social li a:hover.facebook-icon*/
+/*{*/
+    /*background-position: 0px -32px;*/
+/*}*/
+
+/*#social li a.twitter-icon*/
+/*{*/
+    /*background-position: -32px 0px;*/
+/*}*/
+
+/*#social li a:hover.twitter-icon*/
+/*{*/
+    /*background-position: -32px -32px;*/
+/*}*/
+
+/*#social li a.google-icon*/
+/*{*/
+    /*background-position: -64px 0px;*/
+/*}*/
+
+/*#social li a:hover.google-icon*/
+/*{*/
+    /*background-position: -64px -32px;*/
+/*}*/
+
+.console{
+    color:chartreuse;
+}
+
+.employees{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.modal-employee {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 20%;
+    top: 20%;
+    width: 70%; /* Full width */
+    height: 70%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(15, 15, 15, 0.98); /* Fallback color */
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+}
+
+#validate{
+    position: relative;
+    z-index: 3; /* Sit on top */
+    width: 50%; /* Full width */
+    height: 20%; /* Full height */
+    background-color: white;
+    color: red;
+}
+

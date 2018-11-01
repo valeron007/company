@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="bank">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="grid"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mailserver"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="phpmyadmin"/>
+    <schema id="9" parent="1" name="products"/>
+    <schema id="10" parent="1" name="shop_ex"/>
+    <schema id="11" parent="1" name="shop_exam"/>
+    <schema id="12" parent="1" name="shop_new"/>
+    <schema id="13" parent="1" name="site"/>
+    <schema id="14" parent="1" name="symfony"/>
+    <schema id="15" parent="1" name="sys"/>
+    <schema id="16" parent="1" name="testing"/>
+    <schema id="17" parent="1" name="testsite"/>
+    <schema id="18" parent="1" name="test_db_valeron"/>
+    <schema id="19" parent="1" name="theater"/>
+    <schema id="20" parent="1" name="company">
+      <Visible>1</Visible>
+    </schema>
+    <table id="21" parent="2" name="favourite_food"/>
+    <table id="22" parent="2" name="person"/>
+    <table id="23" parent="20" name="department"/>
+    <table id="24" parent="20" name="employee"/>
+    <column id="25" parent="21" name="person_id">
+      <Position>1</Position>
+      <DataType>smallint(5) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="21" name="food">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="27" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>person_id
+food</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="28" parent="21" name="fk_person_id">
+      <ColNames>person_id</ColNames>
+      <RefSchemaName>bank</RefSchemaName>
+      <RefTableName>person</RefTableName>
+      <RefColNames>person_id</RefColNames>
+    </foreign-key>
+    <column id="29" parent="22" name="person_id">
+      <Position>1</Position>
+      <DataType>smallint(5) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="22" name="fname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="31" parent="22" name="lname">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="32" parent="22" name="gender">
+      <Position>4</Position>
+      <DataType>enum(&apos;M&apos;, &apos;F&apos;)|0</DataType>
+    </column>
+    <column id="33" parent="22" name="birth_date">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="34" parent="22" name="address">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="35" parent="22" name="city">
+      <Position>7</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="36" parent="22" name="state">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="37" parent="22" name="country">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="38" parent="22" name="postal_code">
+      <Position>10</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="39" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>person_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="23" name="department_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="23" name="department_name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="42" parent="23" name="department_name">
+      <ColNames>department_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>department_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="44" parent="23" name="department_name">
+      <ColNames>department_name</ColNames>
+      <UnderlyingIndexName>department_name</UnderlyingIndexName>
+    </key>
+    <column id="45" parent="24" name="employee_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="46" parent="24" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="24" name="surname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="24" name="patronymic">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="24" name="gender">
+      <Position>5</Position>
+      <DataType>enum(&apos;M&apos;, &apos;F&apos;)|0</DataType>
+    </column>
+    <column id="50" parent="24" name="salary">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="24" name="department_id">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="52" parent="24" name="department_id">
+      <ColNames>department_id</ColNames>
+    </index>
+    <key id="53" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>employee_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="54" parent="24" name="employee_ibfk_1">
+      <ColNames>department_id</ColNames>
+      <RefSchemaName>company</RefSchemaName>
+      <RefTableName>department</RefTableName>
+      <RefColNames>department_id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

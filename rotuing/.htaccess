@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ slim.php [QSA,L]
+
+#<IfModule mod_rewrite.c>
+#   RewriteEngine on
+#   RewriteRule ^$ slim/     [L]
+#   RewriteRule (.*) slim/$1 [L]
+#</IfModule>
+
