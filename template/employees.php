@@ -76,8 +76,8 @@ $employees = $employee->getAllInformation();
                         <div class="form-group col-md-2">
                             <label for="inputGender">Выберите пол</label>
                             <select id="inputGender" class="form-control">
-                                <option>Мужской</option>
-                                <option>Женский</option>
+                                <option value="M">Мужской</option>
+                                <option value="F">Женский</option>
                             </select>
                         </div>
                     </div>

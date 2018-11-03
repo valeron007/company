@@ -15,3 +15,4 @@ $employee = new Employee();
 
 echo json_encode($employee->delete($_GET['delete_id']));
 
+

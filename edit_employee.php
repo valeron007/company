@@ -12,6 +12,5 @@ include "essence/connect.php";
 include "company/Employee.php";
 
 $employee = new Employee();
-$employee->addEmployee($_POST['employee']);
-
+echo json_encode($employee->addEmployee($_POST['employee']));
 

@@ -75,7 +75,7 @@
                 employee['departments'] = department;
 
                 employee['salary'] = $('#inputSalary').val();
-                employee['gender'] = $('#inputGender').val();
+                employee['gender'] = $('#inputGender :selected').val();
 
                 //делаем проверку формы
                 if(employee['name'] == ''){
@@ -99,10 +99,13 @@
                     type:'POST',
                     response:'json',
                     success:function (data) {
-
+                        var result = JSON.parse(data);
+                        $('.console').html(result.success);
+                        location.reload();
                     },
                     error:function (data) {
-
+                        var result = JSON.parse(data);
+                        $('.console').html(result.error);
                     }
                 });
                 $('.modal-employee').hide();

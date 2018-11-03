@@ -9,6 +9,9 @@
 namespace Company;
 
 use Connect;
+use PDO;
+use PDOException;
+use function var_dump;
 
 class Employee
 {
@@ -27,7 +30,44 @@ class Employee
 	}
 
 	public function addEmployee(Array $employee){
-		$query = "";
+		$departments = $employee['departments'];
+
+		try {
+			if (empty($employee['employee_id'])) {
+				$query_employee = "INSERT INTO employee(name, surname, patronymic, gender, salary)
+					VALUES (:name, :surname, :patronymic, :gender, :salary)";
+
+				$ins_employee = $this->connect->prepare($query_employee);
+				$ins_employee->bindParam(':name', $employee['name']);
+				$ins_employee->bindParam(':surname', $employee['surname']);
+				$ins_employee->bindParam(':patronymic', $employee['patronymic']);
+				$ins_employee->bindParam(':gender', $employee['gender']);
+				$ins_employee->bindParam(':salary', $employee['salary']);
+
+				$ins_employee->execute();
+
+				$id = $this->connect->lastInsertId();
+				$query_dep_emp = "INSERT INTO department_employees(emp_id, dep_id)
+											VALUES
+											(?,?);";
+				$inssert_dep_emp = $this->connect->prepare($query_dep_emp);
+				$this->connect->beginTransaction();
+				foreach ($departments as $dep_id => $department){
+					$inssert_dep_emp->execute(
+						array(
+							$id,
+							$dep_id
+						)
+					);
+				}
+				$this->connect->commit();
+				return array('success' => $id);
+			}
+		}catch (PDOException $pdo){
+			$this->connect->rollBack();
+			return array('error' => $pdo->getMessage());
+		}
+
 	}
 
 	public function getDepartmentsEmployee(){
