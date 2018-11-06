@@ -31,4 +31,19 @@
 	?>
 	</tbody>
 </table>
+<button type="button" class="btn btn-primary department-add">Add</button>
+<div class="modal-department" title="Добавение отдела">
+    <div class="container">
+        <form id="department-added">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputName">Имя</label>
+                    <input type="text" class="form-control" id="inputDepartment" placeholder="Имя">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary add-department">Добавить</button>
+            <button type="button" class="btn btn-danger model-close">Закрыть</button>
+        </form>
+    </div>
+</div>
 

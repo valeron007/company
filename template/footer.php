@@ -55,6 +55,42 @@
                 $('.modal-employee').hide();
             });
 
+            //добавление отдела
+            $('.department-close').on('click', function () {
+                $('.modal-department').hide();
+            });
+
+            $('.department-add').on('click', function () {
+                $('.modal-department').show();
+            });
+
+            $('.add-department').on('click', function () {
+                event.preventDefault();
+                var department = {};
+                department['name'] = $('#inputDepartment').val();
+
+                if(department['name'] == ''){
+                    $('.console').html('Введите название отдела');
+                    return false;
+                }
+                $.ajax({
+                    url:'/department_add.php',
+                    data: {'department' : department},
+                    type:'POST',
+                    response:'json',
+                    success:function (data) {
+                        var result = JSON.parse(data);
+                        $('.console').html(result.success);
+                        location.reload();
+                    },
+                    error:function (data) {
+                        var result = JSON.parse(data);
+                        $('.console').html(result.error);
+                    }
+                });
+                $('.modal-department').hide();
+            });
+
             function isEmpty(obj) {
                 for (var key in obj) {
                     return false;

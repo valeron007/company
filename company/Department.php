@@ -9,6 +9,8 @@
 namespace Company;
 
 use Connect;
+use PDOException;
+use function var_dump;
 
 class Department
 {
@@ -35,6 +37,25 @@ class Department
 			ORDER BY dep.department_id";
 		$department = $this->connect->query($query);
 		return $department->fetchAll();
+	}
+
+	public function department_add(Array $department){
+		try{
+			$query = "INSERT INTO department(department_name) VALUES (:name)";
+			$department_db = $this->connect->prepare($query);
+			$department_db->bindParam(':name', $department['name']);
+			$department_db->execute();
+		}catch (PDOException $pdo){
+			return array('error' => $pdo->getMessage());
+		}
+
+		$dep_id = $this->connect->lastInsertId();
+		return array("success" => $dep_id);
+	}
+
+
+	public function deleteDepartment($id){
+
 	}
 
 }

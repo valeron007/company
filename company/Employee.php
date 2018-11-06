@@ -11,7 +11,6 @@ namespace Company;
 use Connect;
 use PDO;
 use PDOException;
-use function var_dump;
 
 class Employee
 {
@@ -113,8 +112,11 @@ class Employee
 	 */
 	public function delete($id){
 		try{
-			$query = 'DELETE FROM `employee` WHERE employee_id = :id';
-			$del_employee = $this->connect->prepare($query);
+			$query_employee = 'DELETE FROM `employee` WHERE employee_id = :id';
+			$del_employee = $this->connect->prepare($query_employee);
+			$del_employee->execute(['id' => $id]);
+			$query_dep_emp = "DELETE FROM `department_employees` WHERE emp_id = :id";
+			$del_dep_emp = $this->connect->prepare($query_dep_emp);
 			$del_employee->execute(['id' => $id]);
 			return array('success' => true);
 		}catch (PDOException $exception){

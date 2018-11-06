@@ -83,7 +83,7 @@ $employees = $employee->getAllInformation();
                     </div>
 
                     <button type="submit" class="btn btn-primary add-employee">Добавить</button>
-                    <button type="button" class="btn btn-danger model-close">Закрыть</button>
+                    <button type="button" class="btn btn-danger department-close">Закрыть</button>
                 </form>
 
         </div>
