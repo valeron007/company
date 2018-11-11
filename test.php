@@ -87,23 +87,26 @@ foreach ($collect as $val){
 }
 
 
-function sq($value){
-	yield $value * $value;
-}
+//function sq($value){
+//	yield $value * $value;
+//}
+//
+//function even_square($arr){
+//	foreach ($arr as $value){
+//		if($value % 2 == 0){
+//			yield from sq($value);
+//		}
+//	}
+//}
+//
+//$arr = [1,2,3,4,5,6,7];
+//
+//foreach (even_square($arr) as $val)
+//{
+//	echo "$val   ";
+//}
 
-function even_square($arr){
-	foreach ($arr as $value){
-		if($value % 2 == 0){
-			yield from sq($value);
-		}
-	}
-}
-
-$arr = [1,2,3,4,5,6,7];
-
-foreach (even_square($arr) as $val)
-{
-	echo "$val   ";
-}
+//echo "<br>";
+//echo "dir====" . __DIR__;
 
 

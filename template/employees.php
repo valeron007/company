@@ -12,7 +12,8 @@ $employees = $employee->getAllInformation();
 ?>
 
 <div class="container employees">
-	<table class="table table-striped">
+    <button type="button" class="btn btn-primary employee-add">Add</button>
+	<table class="table table-striped emp-table">
 		<thead>
 		<tr>
 			<th scope="col">#</th>
@@ -44,7 +45,6 @@ $employees = $employee->getAllInformation();
 		?>
 		</tbody>
 	</table>
-    <button type="button" class="btn btn-primary employee-add">Add</button>
     <div class="modal-employee" title="Добавение сотрудника">
         <div class="container">
                 <form id="employee-added">
@@ -85,7 +85,6 @@ $employees = $employee->getAllInformation();
                     <button type="submit" class="btn btn-primary add-employee">Добавить</button>
                     <button type="button" class="btn btn-danger department-close">Закрыть</button>
                 </form>
-
         </div>
     </div>
 </div>

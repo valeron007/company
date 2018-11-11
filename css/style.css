@@ -71,7 +71,14 @@ footer
 .employees{
     position: relative;
     margin-bottom: 30px;
+    overflow-x: scroll;
 }
+
+.emp-table{
+    overflow-x:scroll;
+}
+
+
 
 .modal-employee {
     display: none; /* Hidden by default */

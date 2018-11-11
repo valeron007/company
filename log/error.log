@@ -17,3 +17,58 @@
 [Fri Oct 12 02:24:28.777353 2018] [:error] [pid 31117] [client 127.0.0.1:48706] script '/home/valeron/pelmen/employee_delete.php' not found or unable to stat
 [Fri Oct 12 02:25:19.827099 2018] [:error] [pid 31165] [client 127.0.0.1:48716] script '/home/valeron/pelmen/employee_delete.php' not found or unable to stat
 [Fri Oct 12 02:33:33.787220 2018] [:error] [pid 31834] [client 127.0.0.1:48814] script '/home/valeron/pelmen/employee_delete.php' not found or unable to stat
+[Sat Nov 10 10:44:00.714346 2018] [:error] [pid 25757] [client 127.0.0.1:60896] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sat Nov 10 10:44:33.237900 2018] [:error] [pid 25809] [client 127.0.0.1:60908] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:38:24.467975 2018] [:error] [pid 31956] [client 127.0.0.1:48578] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:38:43.227472 2018] [:error] [pid 31991] [client 127.0.0.1:48752] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:40:15.424364 2018] [:error] [pid 32634] [client 127.0.0.1:49516] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:40:15.425377 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:40:15.425440 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP Stack trace:
+[Sun Nov 11 15:40:15.425464 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:40:15.425482 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   2. SxGeo->getCountry() /home/valeron/pelmen/sypex/city.php:15
+[Sun Nov 11 15:40:15.425497 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:264
+[Sun Nov 11 15:40:15.425511 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:40:15.425798 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:40:15.425811 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP Stack trace:
+[Sun Nov 11 15:40:15.425825 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:40:15.425835 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   2. SxGeo->getCity() /home/valeron/pelmen/sypex/city.php:16
+[Sun Nov 11 15:40:15.425843 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:277
+[Sun Nov 11 15:40:15.425851 2018] [:error] [pid 32634] [client 127.0.0.1:49516] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:40:22.533857 2018] [:error] [pid 32643] [client 127.0.0.1:49518] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:40:22.534504 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:40:22.534543 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP Stack trace:
+[Sun Nov 11 15:40:22.534554 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:40:22.534562 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   2. SxGeo->getCountry() /home/valeron/pelmen/sypex/city.php:15
+[Sun Nov 11 15:40:22.534570 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:264
+[Sun Nov 11 15:40:22.534576 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:40:22.534810 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:40:22.534822 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP Stack trace:
+[Sun Nov 11 15:40:22.534833 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:40:22.534842 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   2. SxGeo->getCity() /home/valeron/pelmen/sypex/city.php:16
+[Sun Nov 11 15:40:22.534849 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:277
+[Sun Nov 11 15:40:22.534856 2018] [:error] [pid 32643] [client 127.0.0.1:49518] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:41:41.252891 2018] [:error] [pid 448] [client 127.0.0.1:50238] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:43:30.604353 2018] [:error] [pid 557] [client 127.0.0.1:51138] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:43:30.605220 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:43:30.605271 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP Stack trace:
+[Sun Nov 11 15:43:30.605291 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:43:30.605304 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   2. SxGeo->getCountry() /home/valeron/pelmen/sypex/city.php:18
+[Sun Nov 11 15:43:30.605316 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:264
+[Sun Nov 11 15:43:30.605327 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:43:30.605712 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:43:30.605963 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP Stack trace:
+[Sun Nov 11 15:43:30.605981 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:43:30.605993 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   2. SxGeo->getCity() /home/valeron/pelmen/sypex/city.php:19
+[Sun Nov 11 15:43:30.606003 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:277
+[Sun Nov 11 15:43:30.606013 2018] [:error] [pid 557] [client 127.0.0.1:51138] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:44:58.702300 2018] [:error] [pid 696] [client 127.0.0.1:51880] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:44:58.703055 2018] [:error] [pid 696] [client 127.0.0.1:51880] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php on line 164
+[Sun Nov 11 15:44:58.703089 2018] [:error] [pid 696] [client 127.0.0.1:51880] PHP Stack trace:
+[Sun Nov 11 15:44:58.703108 2018] [:error] [pid 696] [client 127.0.0.1:51880] PHP   1. {main}() /home/valeron/pelmen/sypex/city.php:0
+[Sun Nov 11 15:44:58.703123 2018] [:error] [pid 696] [client 127.0.0.1:51880] PHP   2. SxGeo->getCityFull() /home/valeron/pelmen/sypex/city.php:18
+[Sun Nov 11 15:44:58.703135 2018] [:error] [pid 696] [client 127.0.0.1:51880] PHP   3. SxGeo->get_num() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:281
+[Sun Nov 11 15:44:58.703144 2018] [:error] [pid 696] [client 127.0.0.1:51880] PHP   4. fread() /home/valeron/pelmen/sypex/sypexgeo/SxGeo.php:164
+[Sun Nov 11 15:47:09.399572 2018] [:error] [pid 939] [client 127.0.0.1:53066] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:47:42.535078 2018] [:error] [pid 1004] [client 127.0.0.1:53344] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 15:48:19.332430 2018] [:error] [pid 1078] [client 127.0.0.1:53648] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
+[Sun Nov 11 17:18:07.211984 2018] [:error] [pid 9427] [client 127.0.0.1:41672] XDebug could not open the remote debug file '/home/valeron/xdebug.log   /home/valeron/xdebug.log'.
